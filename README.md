@@ -163,7 +163,7 @@ Pickup vs Delivery
 The analysis shows that pickup events performed better than delivery events in terms of on-time performance.
 
 📈 Power BI Dashboard
-![Smart Logistics Power BI Dashboard](dashboard.png)
+![Smart Logistics Power BI Dashboard](screenshots/dashboard.png)
 The Power BI dashboard contains:
 - Total Events KPI
 - Overall On-Time Percentage
