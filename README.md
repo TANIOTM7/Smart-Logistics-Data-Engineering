@@ -21,40 +21,31 @@ The goal of this project is to analyze logistics operations and identify:
 The project demonstrates an end-to-end data engineering workflow using Microsoft Fabric.
 
 ---
- 🏗️ Architecture
+## Project Architecture
 
-text
+```text
 Raw CSV Files
-     │
-     ▼
-┌──────────────┐
-│    BRONZE    │
-│  Raw Files   │
-└──────┬───────┘
-       │
-       ▼
-┌──────────────┐
-│    SILVER    │
-│ Data Cleaning│
-│ Validation   │
-│ Transformation
-└──────┬───────┘
-       │
-       ▼
-┌─────────────────────────────┐
-│            GOLD             │
-│                             │
-│ Delivery Performance        │
-│ Facility Performance        │
-│ Location Performance        │
-└──────────────┬──────────────┘
-               │
-               ▼
-        Power BI Semantic Model
-               │
-               ▼
-        Power BI Dashboard
-
+     |
+     v
+   BRONZE
+  Raw Files
+     |
+     v
+   SILVER
+Cleaning, Validation
+ and Transformation
+     |
+     v
+    GOLD
+  +-- Delivery Performance
+  +-- Facility Performance
+  +-- Location Performance
+     |
+     v
+Power BI Semantic Model
+     |
+     v
+Power BI Dashboard
 🛠️ Technologies Used
 - Microsoft Fabric
 - OneLake
